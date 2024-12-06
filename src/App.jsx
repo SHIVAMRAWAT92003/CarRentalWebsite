@@ -56,6 +56,7 @@ const App = () => {
               </>
             }
           />
+          
           <Route path="/cars" element={<CarList />} />
           <Route path="/scooties" element={<ScootyList />} />
           <Route path="/bikes" element={<BikeList />} />
