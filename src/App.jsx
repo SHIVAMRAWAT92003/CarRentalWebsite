@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -61,7 +61,7 @@ const App = () => {
           <Route path="/bikes" element={<BikeList />} />
         </Routes>
       </div>
-    </Router>
+    </Router >
   );
 };
 
