@@ -1,6 +1,8 @@
 import React from "react";
 import { FaCar, FaBicycle } from "react-icons/fa"; // For Car and Bike
 import { GiScooter } from "react-icons/gi"; // For Scooty
+import { Link } from 'react-router-dom'; 
+
 
 const skillsData = [
   {
@@ -58,12 +60,12 @@ const Services = () => {
                 <div className="grid place-items-center">{skill.icon}</div>
                 <h1 className="text-2xl font-bold">{skill.name}</h1>
                 <p>{skill.description}</p>
-                <a
-                  href={skill.link}
+                <Link
+                  to={skill.link}
                   className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
                 >
                   Learn more
-                </a>
+                </Link>
               </div>
             ))}
           </div>
